@@ -6,7 +6,7 @@ int decimalToBinary (int dec) {
 
 
 int binaryToDecimal (int bcd) {
-   return (((bcd>>4)*10) + (bcd & 0xF))
+   return ((((bcd & 0x7F )>>4)*10) + (bcd & 0xF))
 }
 
 
